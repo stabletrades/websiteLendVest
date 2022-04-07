@@ -6,3 +6,12 @@ publish_mode: editorial_workflow
 # This line should *not* be indented
 media_folder: "main-html/images/uploads/" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "posts"
+    label: "Post"
+    folder: "_posts"
+    filter:
+      field: language
+      value: en
+    fields:
+      - {label: "Language", name: "language"}
