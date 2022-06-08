@@ -73,7 +73,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
 			### Include Form Fields into Body Message
 			$bodymsg .= isset($cf_email) ? "Subscribe Email: $cf_email<br><br>" : '';
-			$bodymsg .= $_SERVER['HTTP_REFERER'] ? '<br>---<br><br>This email was sent from [ICO]: ' . $_SERVER['HTTP_REFERER'] : '';
+			$bodymsg .= $_SERVER['HTTP_REFERER'] ? '<br>---<br><br>This email was sent from Lend Vest: ' . $_SERVER['HTTP_REFERER'] : '';
 			
 			// Mailing
 			$mail->MsgHTML( $bodymsg );
