@@ -6,7 +6,7 @@ $mail = new PHPMailer();
 $emailTO = $emailBCC =  $emailCC = array(); $formEmail = '';
 
 ### Enter Your Sitename 
-$sitename = 'Lendvest.io';
+$sitename = 'lendvest.io';
 
 ### Enter your email addresses: @required
 $emailTO[] = array( 'email' => 'info@lendvest.io', 'name' => 'Lend Vest Team' ); 
