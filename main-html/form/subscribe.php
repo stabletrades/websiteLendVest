@@ -9,7 +9,7 @@ $emailTO = $emailBCC =  $emailCC = array(); $formEmail = '';
 $sitename = 'Lendvest.io';
 
 ### Enter your email addresses: @required
-$emailTO[] = array( 'email' => 'Josh@klevel.one', 'name' => 'Your Name' ); 
+$emailTO[] = array( 'email' => 'info@lendvest.io', 'name' => 'Lend Vest Team' ); 
 
 ### Enable bellow parameters & update your BCC email if require.
 //$emailBCC[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' );
@@ -21,7 +21,7 @@ $emailTO[] = array( 'email' => 'Josh@klevel.one', 'name' => 'Your Name' );
 $subject = "Subscribtion Notification" . ' - ' . $sitename; 
 
 ### If your did not recive email after submit form please enable below line and must change to your correct domain name. eg. noreply@example.com
-//$formEmail = 'noreply@yoursite.com';
+$formEmail = 'info@lendvest.io'; //'noreply@yoursite.com';
 
 ### Success Messages
 $msg_success = "You have <strong>successfully</strong> Subscribed. We'll get back to you soon.";
