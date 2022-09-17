@@ -9,7 +9,7 @@ $emailTO = $emailBCC =  $emailCC = array(); $formEmail = '';
 $sitename = 'lendvest.io';
 
 ### Enter your email addresses: @required
-$emailTO[] = array( 'email' => 'josh@klevel.one', 'name' => 'Lendvest Team' ); 
+$emailTO[] = array( 'email' => 'team@lendvest.io', 'name' => 'Lendvest Team' ); 
 
 ### Enable bellow parameters & update your BCC email if require.
 //$emailBCC[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' );
