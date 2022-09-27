@@ -19,127 +19,9 @@
 
 <style>
 html {
-  cursor: none;
+ cursor:url(images/uploads/favicon-16x16.png), auto;
+
   background: #666;
-}
-#follower {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-#follower #circle1 {
-  position: absolute;
-  -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
-  animation: pulse 2s infinite;
-  background: rgb(116, 22, 22);
-  border-radius: 50%;
-  height: 0em;
-  width: 0em;
-  margin-top: 0em;
-  margin-left: 0em;
-}
-#follower #circle2 {
-  position: absolute;
-  -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
-  animation: pulse 4s infinite;
-  background: rgba(35, 30, 190, 0.8);
-  border-radius: 50%;
-  height: 0em;
-  width: 0em;
-  margin-top: 0em;
-  margin-left: 0em;
-}
-@-moz-keyframes pulse {
-  0% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-  50% {
-    opacity: 0.9;
-    height: 3em;
-    width: 3em;
-    margin-top: -1.5em;
-    margin-left: -1.5em;
-  }
-  100% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-}
-@-webkit-keyframes pulse {
-  0% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-  50% {
-    opacity: 0.9;
-    height: 3em;
-    width: 3em;
-    margin-top: -1.5em;
-    margin-left: -1.5em;
-  }
-  100% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-}
-@-o-keyframes pulse {
-  0% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-  50% {
-    opacity: 0.9;
-    height: 3em;
-    width: 3em;
-    margin-top: -1.5em;
-    margin-left: -1.5em;
-  }
-  100% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-}
-@keyframes pulse {
-  0% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
-  50% {
-    opacity: 0.9;
-    height: 3em;
-    width: 3em;
-    margin-top: -1.5em;
-    margin-left: -1.5em;
-  }
-  100% {
-    opacity: 0.2;
-    height: 1em;
-    width: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-  }
 }
 
 </style>
@@ -149,10 +31,7 @@ html {
 </head>
 
 <body class="nk-body body-wider theme-dark mode-onepage">
-  <div id="follower">
-        <div id="circle1"></div>
-        <div id="circle2"></div>
-      </div>    
+ 
     <div class="nk-wrap">
         <header class="nk-header page-header is-transparent is-sticky is-shrink is-dark" id="header">
             <!-- Header @s -->
@@ -816,48 +695,7 @@ html {
 
     <div class="preloader"><span class="spinner spinner-round"></span></div>
     <!-- JavaScript -->
- <script>
-        (function() {
-      var follower, init, mouseX, mouseY, positionElement, printout, timer;
-    
-      follower = document.getElementById('follower');
-            console.log(follower);
-    
-      printout = document.getElementById('printout');
-    
-      mouseX = (event) => {
-        return event.clientX;
-      };
-    
-      mouseY = (event) => {
-        return event.clientY;
-      };
-    
-      positionElement = (event) => {
-        var mouse;
-        mouse = {
-          x: mouseX(event),
-          y: mouseY(event)
-        };
-        follower.style.top = mouse.y + 'px';
-        return follower.style.left = mouse.x + 'px';
-      };
-    
-      timer = false;
-    
-      window.onmousemove = init = (event) => {
-        var _event;
-        _event = event;
-        return timer = setTimeout(() => {
-          return positionElement(_event);
-        }, 1);
-      };
-    
-    }).call(this);
-    
-    //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiPGFub255bW91cz4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSxNQUFBLFFBQUEsRUFBQSxJQUFBLEVBQUEsTUFBQSxFQUFBLE1BQUEsRUFBQSxlQUFBLEVBQUEsUUFBQSxFQUFBOztFQUFBLFFBQUEsR0FBVyxRQUFRLENBQUMsY0FBVCxDQUF3QixVQUF4Qjs7RUFDWCxRQUFBLEdBQVcsUUFBUSxDQUFDLGNBQVQsQ0FBd0IsVUFBeEI7O0VBRVgsTUFBQSxHQUFTLENBQUMsS0FBRCxDQUFBLEdBQUE7QUFDUCxXQUFPLEtBQUssQ0FBQztFQUROOztFQUdULE1BQUEsR0FBUyxDQUFDLEtBQUQsQ0FBQSxHQUFBO0FBQ1AsV0FBTyxLQUFLLENBQUM7RUFETjs7RUFHVCxlQUFBLEdBQWtCLENBQUMsS0FBRCxDQUFBLEdBQUE7QUFDbEIsUUFBQTtJQUFFLEtBQUEsR0FBUTtNQUNOLENBQUEsRUFBRyxNQUFBLENBQU8sS0FBUCxDQURHO01BRU4sQ0FBQSxFQUFHLE1BQUEsQ0FBTyxLQUFQO0lBRkc7SUFJUixRQUFRLENBQUMsS0FBSyxDQUFDLEdBQWYsR0FBcUIsS0FBSyxDQUFDLENBQU4sR0FBVTtXQUMvQixRQUFRLENBQUMsS0FBSyxDQUFDLElBQWYsR0FBc0IsS0FBSyxDQUFDLENBQU4sR0FBVTtFQU5oQjs7RUFRbEIsS0FBQSxHQUFROztFQUNSLE1BQU0sQ0FBQyxXQUFQLEdBQXFCLElBQUEsR0FBTyxDQUFDLEtBQUQsQ0FBQSxHQUFBO0FBQzVCLFFBQUE7SUFBRSxNQUFBLEdBQVM7V0FDVCxLQUFBLEdBQVEsVUFBQSxDQUFXLENBQUEsQ0FBQSxHQUFBO2FBQ2pCLGVBQUEsQ0FBZ0IsTUFBaEI7SUFEaUIsQ0FBWCxFQUVOLENBRk07RUFGa0I7QUFsQjVCIiwic291cmNlc0NvbnRlbnQiOlsiZm9sbG93ZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZm9sbG93ZXInKVxucHJpbnRvdXQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncHJpbnRvdXQnKVxuXG5tb3VzZVggPSAoZXZlbnQpID0+XG4gIHJldHVybiBldmVudC5jbGllbnRYXG5cbm1vdXNlWSA9IChldmVudCkgPT5cbiAgcmV0dXJuIGV2ZW50LmNsaWVudFlcblxucG9zaXRpb25FbGVtZW50ID0gKGV2ZW50KSA9PlxuICBtb3VzZSA9IHtcbiAgICB4OiBtb3VzZVgoZXZlbnQpXG4gICAgeTogbW91c2VZKGV2ZW50KVxuICB9XG4gIGZvbGxvd2VyLnN0eWxlLnRvcCA9IG1vdXNlLnkgKyAncHgnXG4gIGZvbGxvd2VyLnN0eWxlLmxlZnQgPSBtb3VzZS54ICsgJ3B4J1xuXG50aW1lciA9IGZhbHNlXG53aW5kb3cub25tb3VzZW1vdmUgPSBpbml0ID0gKGV2ZW50KSA9PlxuICBfZXZlbnQgPSBldmVudFxuICB0aW1lciA9IHNldFRpbWVvdXQgPT5cbiAgICBwb3NpdGlvbkVsZW1lbnQoX2V2ZW50KVxuICAsIDEiXX0=
-    //# sourceURL=coffeescript
-    </script>
+ 
 
     <script src="assets/js/jquery.bundle.js?ver=200"></script>
     <script src="assets/js/scripts.js?ver=200"></script>
