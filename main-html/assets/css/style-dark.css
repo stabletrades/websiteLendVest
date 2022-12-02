@@ -60,9 +60,23 @@
 
 @font-face { font-family: 'Poppins'; src: url("../fonts/Poppins-Regular.eot"); src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+
+
+@font-face {
+  font-family: 'mediumFont';
+  src: url('../fonts/futura-medium-bt.ttf') format("truetype");
+}
+
+
+@font-face {
+  font-family: 'headingFont';
+  src: url('../fonts/futura-medium-bt.ttf') format("truetype");
+}
+
+
 /** 02. Utilities */
 /** 02.01 Reset */
-html, body { font-family: "Poppins", sans-serif; color: #28384c; font-size: 14px; line-height: 1.86; font-weight: 300; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: relative; }
+html, body { color: #28384c; font-size: 14px; line-height: 1.86; font-weight: 300; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: relative; font-family: 'mediumFont'; }
 
 @media (min-width: 576px) { html, body { font-size: 16px; line-height: 1.86; font-weight: 300; } }
 
@@ -78,13 +92,17 @@ blockquote::after, blockquote::before, q::after, q::before { content: none; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color: #28384c; font-weight: 500; font-family: "Poppins", sans-serif; line-height: 1.45; margin-bottom: 0.5rem; }
+
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color: #28384c; font-weight: normal !important; font-family: 'headingFont' !important; line-height: 1.45; margin-bottom: 0.5rem;  }
 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child { margin-bottom: 0; }
 
 .tc-light h1, .tc-light h2, .tc-light h3, .tc-light h4, .tc-light h5, .tc-light h6, .tc-light .h1, .tc-light .h2, .tc-light .h3, .tc-light .h4, .tc-light .h5, .tc-light .h6 { color: #fff; }
 
-p { font-size: 14px; margin-bottom: 1rem; color: #8284a5; }
+p { font-size: 14px; margin-bottom: 1rem; color: #8284a5;  }
 
 p:last-child { margin-bottom: 0; }
 
@@ -92,11 +110,11 @@ p + [class*=btn] { margin-top: 15px; }
 
 @media (min-width: 576px) { p { font-size: 15px; } }
 
-ul, ol, table { margin: 0; padding: 0; }
+ul, ol, table { margin: 0; padding: 0;  }
 
-strong, b { font-weight: 500; }
+strong, b { font-weight: 500;}
 
-a { outline: 0 none; transition: all 0.5s; color: #46bdf4; }
+a { outline: 0 none; transition: all 0.5s; color: #46bdf4; font-family : "mediumFont" !important; font-weight: bold !important;}
 
 a:link, a:visited { text-decoration: none; }
 
