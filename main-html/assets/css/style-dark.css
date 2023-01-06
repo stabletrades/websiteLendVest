@@ -61,7 +61,7 @@
 @font-face { font-family: 'Poppins'; src: url("../fonts/Poppins-Regular.eot"); src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 
-
+/* 
 @font-face {
   font-family: 'mediumFont';
   src: url('../fonts/futura-medium-bt.ttf') format("truetype");
@@ -72,11 +72,11 @@
   font-family: 'headingFont';
   src: url('../fonts/futura-medium-bt.ttf') format("truetype");
 }
-
+ */
 
 /** 02. Utilities */
 /** 02.01 Reset */
-html, body { color: #28384c; font-size: 14px; line-height: 1.86; font-weight: 300; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: relative; font-family: 'mediumFont'; }
+html, body { color: #28384c; font-size: 14px; line-height: 1.86; font-weight: 300; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: relative;  }
 
 @media (min-width: 576px) { html, body { font-size: 16px; line-height: 1.86; font-weight: 300; } }
 
@@ -96,7 +96,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color: #28384c; font-weight: normal !important; font-family: 'headingFont' !important; line-height: 1.45; margin-bottom: 0.5rem;  }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color: #28384c; font-weight: 500; font-family: "Poppins", sans-serif; line-height: 1.45; margin-bottom: 0.5rem; }
 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child { margin-bottom: 0; }
 
@@ -114,7 +114,7 @@ ul, ol, table { margin: 0; padding: 0;  }
 
 strong, b { font-weight: 500;}
 
-a { outline: 0 none; transition: all 0.5s; color: #46bdf4; font-family : "mediumFont" !important; font-weight: bold !important;}
+a { outline: 0 none; transition: all 0.5s; color: #46bdf4; }
 
 a:link, a:visited { text-decoration: none; }
 
